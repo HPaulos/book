@@ -1,0 +1,282 @@
+[
+    {
+      "id": 4,
+      "city": "Adama"
+    },
+    {
+      "id": 1,
+      "city": "Addis Ababa"
+    },
+    {
+      "id": 24,
+      "city": "Adigrat"
+    },
+    {
+      "id": 36,
+      "city": "Adwa"
+    },
+    {
+      "id": 70,
+      "city": "Agaro"
+    },
+    {
+      "id": 31,
+      "city": "Aksum"
+    },
+    {
+      "id": 44,
+      "city": "Alaba Kulito"
+    },
+    {
+      "id": 45,
+      "city": "Alamata"
+    },
+    {
+      "id": 54,
+      "city": "Alemaya"
+    },
+    {
+      "id": 59,
+      "city": "Aleta Wendo"
+    },
+    {
+      "id": 29,
+      "city": "Ambo"
+    },
+    {
+      "id": 14,
+      "city": "Arba Minch"
+    },
+    {
+      "id": 37,
+      "city": "Areka"
+    },
+    {
+      "id": 30,
+      "city": "Arsi Negele"
+    },
+    {
+      "id": 20,
+      "city": "Asella"
+    },
+    {
+      "id": 50,
+      "city": "Asosa"
+    },
+    {
+      "id": 6,
+      "city": "Bahir Dar"
+    },
+    {
+      "id": 33,
+      "city": "Bale Robe"
+    },
+    {
+      "id": 13,
+      "city": "Bishoftu"
+    },
+    {
+      "id": 51,
+      "city": "Boditi"
+    },
+    {
+      "id": 65,
+      "city": "Bonga"
+    },
+    {
+      "id": 64,
+      "city": "Bule Hora Town"
+    },
+    {
+      "id": 27,
+      "city": "Burayu"
+    },
+    {
+      "id": 34,
+      "city": "Butajira"
+    },
+    {
+      "id": 46,
+      "city": "Chiro"
+    },
+    {
+      "id": 68,
+      "city": "Dangila"
+    },
+    {
+      "id": 19,
+      "city": "Debre Birhan"
+    },
+    {
+      "id": 21,
+      "city": "Debre Mark'os"
+    },
+    {
+      "id": 23,
+      "city": "Debre Tabor"
+    },
+    {
+      "id": 69,
+      "city": "Degehabur"
+    },
+    {
+      "id": 58,
+      "city": "Dembi Dolo"
+    },
+    {
+      "id": 9,
+      "city": "Dessie"
+    },
+    {
+      "id": 17,
+      "city": "Dilla"
+    },
+    {
+      "id": 7,
+      "city": "Dire Dawa"
+    },
+    {
+      "id": 48,
+      "city": "Durame"
+    },
+    {
+      "id": 62,
+      "city": "Fiche"
+    },
+    {
+      "id": 63,
+      "city": "Finote Selam"
+    },
+    {
+      "id": 32,
+      "city": "Gambela"
+    },
+    {
+      "id": 52,
+      "city": "Gimbi"
+    },
+    {
+      "id": 49,
+      "city": "Goba"
+    },
+    {
+      "id": 41,
+      "city": "Gode"
+    },
+    {
+      "id": 3,
+      "city": "Gondar"
+    },
+    {
+      "id": 16,
+      "city": "Harar"
+    },
+    {
+      "id": 5,
+      "city": "Hawassa"
+    },
+    {
+      "id": 15,
+      "city": "Hosaena"
+    },
+    {
+      "id": 11,
+      "city": "Jijiga"
+    },
+    {
+      "id": 10,
+      "city": "Jimma"
+    },
+    {
+      "id": 67,
+      "city": "Jinka"
+    },
+    {
+      "id": 66,
+      "city": "Kobo"
+    },
+    {
+      "id": 22,
+      "city": "Kombolcha"
+    },
+    {
+      "id": 2,
+      "city": "Mekelle"
+    },
+    {
+      "id": 42,
+      "city": "Meki"
+    },
+    {
+      "id": 60,
+      "city": "Metu"
+    },
+    {
+      "id": 55,
+      "city": "Mizan Teferi"
+    },
+    {
+      "id": 57,
+      "city": "Modjo"
+    },
+    {
+      "id": 61,
+      "city": "Mota"
+    },
+    {
+      "id": 43,
+      "city": "Negele Borana"
+    },
+    {
+      "id": 18,
+      "city": "Nekemte"
+    },
+    {
+      "id": 56,
+      "city": "Sawla"
+    },
+    {
+      "id": 26,
+      "city": "Sebeta"
+    },
+    {
+      "id": 12,
+      "city": "Shashamane"
+    },
+    {
+      "id": 28,
+      "city": "Shire (Inda Selassie)"
+    },
+    {
+      "id": 8,
+      "city": "Sodo"
+    },
+    {
+      "id": 47,
+      "city": "Tepi"
+    },
+    {
+      "id": 40,
+      "city": "Welkite"
+    },
+    {
+      "id": 25,
+      "city": "Woldiya"
+    },
+    {
+      "id": 39,
+      "city": "Woliso"
+    },
+    {
+      "id": 53,
+      "city": "Wukro"
+    },
+    {
+      "id": 38,
+      "city": "Yirgalem"
+    },
+    {
+      "id": 35,
+      "city": "Ziway"
+    }
+  ]
