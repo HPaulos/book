@@ -29,7 +29,8 @@ dependencies:
   provider: ^4.0.4
   date_range_picker: ^1.0.6
   autocomplete_textfield: ^1.7.3
-
+  auto_size_text: ^2.1.0
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -48,7 +49,37 @@ flutter:
 
   assets:
     - assets/
-
+  fonts:
+    - family: FredokaOne
+      fonts:
+        - asset: fonts/fredoka_one/FredokaOne-Regular.ttf
+          weight: 900
+    - family: NotoSerif
+      fonts:
+        - asset:  fonts/NotoSerif/NotoSerif-Bold.ttf
+        - asset:  fonts/NotoSerif/NotoSerif-BoldItalic.ttf
+        - asset:  fonts/NotoSerif/NotoSerif-Italic.ttf
+        - asset:  fonts/NotoSerif/NotoSerif-Regular.ttf    
+    - family: Montserrat
+      fonts: 
+        - asset: fonts/montserrat/Montserrat-Black.ttf    
+        - asset: fonts/montserrat/Montserrat-BlackItalic.ttf
+        - asset: fonts/montserrat/Montserrat-Bold.ttf
+        - asset: fonts/montserrat/Montserrat-BoldItalic.ttf
+        - asset: fonts/montserrat/Montserrat-ExtraBold.ttf
+        - asset: fonts/montserrat/Montserrat-ExtraBoldItalic.ttf
+        - asset: fonts/montserrat/Montserrat-ExtraLight.ttf
+        - asset: fonts/montserrat/Montserrat-ExtraLightItalic.ttf
+        - asset: fonts/montserrat/Montserrat-Italic.ttf
+        - asset: fonts/montserrat/Montserrat-Light.ttf
+        - asset: fonts/montserrat/Montserrat-LightItalic.ttf
+        - asset: fonts/montserrat/Montserrat-Medium.ttf
+        - asset: fonts/montserrat/Montserrat-MediumItalic.ttf
+        - asset: fonts/montserrat/Montserrat-Regular.ttf
+        - asset: fonts/montserrat/Montserrat-SemiBold.ttf
+        - asset: fonts/montserrat/Montserrat-SemiBoldItalic.ttf
+        - asset: fonts/montserrat/Montserrat-Thin.ttf
+        - asset: fonts/montserrat/Montserrat-ThinItalic.ttf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

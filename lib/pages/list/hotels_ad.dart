@@ -52,7 +52,7 @@ class _HotelsAdState extends State<HotelsAd> {
   void initState() {
     _controller = ScrollController();
     periodicScroller = Timer.periodic(const Duration(seconds: 3), (timer) {
-      if (_controller.hasClients) {
+      if (!_controller.hasClients) {
         return;
       }
 

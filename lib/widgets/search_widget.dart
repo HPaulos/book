@@ -25,7 +25,7 @@ class _SearchWidgetState extends State<SearchWidget> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white,
+      color: Theme.of(context).cardColor,
       borderRadius: BorderRadius.circular(23),
       borderOnForeground: false,
       elevation: 7,
@@ -45,7 +45,7 @@ class _SearchWidgetState extends State<SearchWidget> {
         future: Provider.of<CitiesListProvider>(context).getCities,
         builder: (context, cities) {
           if (cities.hasData) {
-            return AutoCompleteTextField<String>(            
+            return AutoCompleteTextField<String>(
                 suggestionsAmount: 7,
                 itemSubmitted: (text) {
                   widget._searchController.text = text;
