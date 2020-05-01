@@ -16,14 +16,15 @@ class MyApp extends StatelessWidget {
     final primarySwatchColorCode =
         Provider.of<BookThemeProvider>(context).primarySwatchColorCode;
     final primarySwatch = MyApp.createSwatch(Color(primarySwatchColorCode));
-    const canvasColor = Colors.white;
+    const canvasColor = Color(0xFFE0E0E0);
+    const cardColor = Colors.white;
 
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        canvasColor: canvasColor,
-        primarySwatch: MaterialColor(primarySwatchColorCode, primarySwatch),
-      ),
+          canvasColor: canvasColor,
+          primarySwatch: MaterialColor(primarySwatchColorCode, primarySwatch),
+          cardColor: cardColor),
       home: RoomsList(),
       routes: {"/rooms": (context) => RoomsList()},
     );

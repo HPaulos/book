@@ -5,53 +5,57 @@ import 'package:provider/provider.dart';
 
 import '../../state/book_theme.dart';
 
-class HotelsAdd extends StatefulWidget {
+class HotelsAd extends StatefulWidget {
   @override
-  _HotelsAddState createState() => _HotelsAddState();
+  _HotelsAdState createState() => _HotelsAdState();
 }
 
-class _HotelsAddState extends State<HotelsAdd> {
-  List<HotelAddModel> hotels = [
-    HotelAddModel(
+class _HotelsAdState extends State<HotelsAd> {
+  List<HotelModel> hotels = [
+    HotelModel(
         imageUrl:
             "https://ihg.scene7.com/is/image/ihg/holiday-inn-the-colony-4629618286-4x3",
         locationName: "Bahir Dar",
         name: "Hotel Selami"),
-    HotelAddModel(
+    HotelModel(
         imageUrl:
             "https://cache.marriott.com/marriottassets/marriott/HNLWI/hnlwi-cochere-1995-hor-wide.jpg?interpolation=progressive-bilinear&downsize=1440px:*",
         locationName: "Gonder",
         name: "Fasil Hotel"),
-    HotelAddModel(
+    HotelModel(
         imageUrl:
             "https://cdn4.hotelfigueroa.com/wp-content/uploads/2020/03/16173012/hotel-figueroa-iconicpool-2-1440x722.jpg",
         locationName: "Debire Birhna",
         name: "Bernos Hotel"),
-    HotelAddModel(
+    HotelModel(
         imageUrl:
             "https://a36c2e13a78ae1256a2f-1dc878dead8ec78a84e429cdf4c9df00.ssl.cf1.rackcdn.com/responsive/980/a36c2e13a78ae1256a2f-1dc878dead8ec78a84e429cdf4c9df00.ssl.cf1.rackcdn.com/u/park-hotel-clarke-quay/gallery-2018/Lobby-Park-Hotel-Clarke-Quay.jpg",
         locationName: "Adama",
         name: "Aba Jifar Hotel"),
-    HotelAddModel(
+    HotelModel(
         imageUrl:
             "https://3l7op12xuwj665r13zqtai1a-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/victorian_junior_suite_king_ocean_view_balcony_18_rbenson_SANQQ_K1VOM_1080x590.jpg",
         locationName: "Adama",
         name: "Aba Jifar Hotel"),
-    HotelAddModel(
+    HotelModel(
         imageUrl:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQURH4xWvnTAJqBrqSwExJR3ux4itdIpWRnwMfdvw8kW_odG6pO&usqp=CAU",
         name: "Aba Jifar Hotel",
         locationName: "Hawasa"),
-    HotelAddModel(
-        imageUrl: null, locationName: "Adama", name: "Aba Jifar Hotel"),
+    HotelModel(imageUrl: null, locationName: "Adama", name: "Aba Jifar Hotel"),
   ];
   ScrollController _controller;
   int direction = 1;
+  Timer periodicScroller;
 
   @override
   void initState() {
     _controller = ScrollController();
-    Timer.periodic(const Duration(seconds: 7), (timer) {
+    periodicScroller = Timer.periodic(const Duration(seconds: 3), (timer) {
+      if (_controller.hasClients) {
+        return;
+      }
+
       if (_controller.position.atEdge) {
         direction = -1 * direction;
       }
@@ -65,6 +69,7 @@ class _HotelsAddState extends State<HotelsAdd> {
   @override
   void dispose() {
     _controller.dispose();
+    periodicScroller.cancel();
     super.dispose();
   }
 
@@ -79,7 +84,7 @@ class _HotelsAddState extends State<HotelsAdd> {
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 5),
-            child: HotelAddCard(hotels[index]),
+            child: HotelAdCard(hotels[index]),
           );
         },
         scrollDirection: Axis.horizontal,
@@ -88,10 +93,10 @@ class _HotelsAddState extends State<HotelsAdd> {
   }
 }
 
-class HotelAddCard extends StatelessWidget {
-  const HotelAddCard(this._hotel);
+class HotelAdCard extends StatelessWidget {
+  const HotelAdCard(this._hotel);
 
-  final HotelAddModel _hotel;
+  final HotelModel _hotel;
   final String placeHolder =
       "https://www.briggshealthcare.com/briggs-qs-elbrus/img/comingsoon_300px.jpg?resizeid=20&resizeh=0&resizew=280";
   @override
@@ -185,8 +190,8 @@ class HotelAddCard extends StatelessWidget {
   }
 }
 
-class HotelAddModel {
-  HotelAddModel(
+class HotelModel {
+  HotelModel(
       {@required this.name,
       @required this.locationName,
       @required this.imageUrl});

@@ -1,9 +1,8 @@
-import 'package:book/state/book_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:provider/provider.dart';
 import '../../widgets/search_widget.dart';
-import 'hotels_add.dart';
+import 'hotels_ad.dart';
+import 'room_card.dart';
 
 class RoomsList extends StatelessWidget {
   @override
@@ -17,7 +16,7 @@ class RoomsList extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
-        child: ListView(
+        child: Column(
           children: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -26,14 +25,16 @@ class RoomsList extends StatelessWidget {
                 Expanded(child: SearchWidget(TextEditingController())),
               ],
             ),
-            HotelsAdd(),
-            Row(
-              children: <Widget>[
-                Center(
-                  child: Text("The list "),
-                )
-              ],
-            )
+            Expanded(child: ListView.builder(itemBuilder: (context, index) {
+              if (index == 0) {
+                return HotelsAd();
+              }
+
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 7),
+                child: RoomCard(),
+              );
+            }))
           ],
         ),
       ),

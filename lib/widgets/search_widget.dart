@@ -25,7 +25,7 @@ class _SearchWidgetState extends State<SearchWidget> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Theme.of(context).canvasColor.withOpacity(.5),
+      color: Colors.white,
       borderRadius: BorderRadius.circular(23),
       borderOnForeground: false,
       elevation: 7,
